@@ -4,6 +4,7 @@
     {
         public int Tick { get; set; }
         public double TickSpeed { get; set; }
+        public List<Entity> Entities { get; set; }
 
         public World()
         {
@@ -31,17 +32,27 @@
 
         private void UpdateWorld()
         {
+            // Ennek kene frissitenie az osszes entitast
+        }
 
+        private void CheckCollisions()
+        {
+            // Ennek kene inditania az utkozes ellenorzeseket az entitasok kozott
         }
 
         private void IncreaseSpawnChance()
         {
-
+            // Ennek kene novelnie az Enemy SpawnChance-et
         }
 
         private void ResetTick()
         {
             Tick = 0;
+        }
+
+        private void ClearDeadEntities()
+        {
+            Entities.RemoveAll(e => !e.IsAlive);
         }
     }
 }

@@ -1,6 +1,9 @@
 ﻿namespace WorldDefender.Models.Entities
 {
-    internal class Player
+    // A player osztaly, csak jobbra es balra tud menni
+    internal class Player : Entity
     {
+
+
     }
 }

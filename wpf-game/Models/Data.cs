@@ -1,5 +1,7 @@
 ﻿namespace WorldDefender.Models
 {
+    // Generic osztaly a key-value pair-eknek
+    // Hasznalata: Data<int, string> data = new Data<int, string>(1, "Egy");
     internal class Data<T, G> : Dictionary<T, G>
     {
         public T Key { get; set; }
