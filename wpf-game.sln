@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldDefender", "wpf-game\WorldDefender.csproj", "{6FFEEDFF-BD5C-4000-A763-C821DAE0AD35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldDefenderTest", "WorldDefenderTest\WorldDefenderTest.csproj", "{714B926A-9ABF-4FAB-ADB8-37F1B882472A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FFEEDFF-BD5C-4000-A763-C821DAE0AD35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FFEEDFF-BD5C-4000-A763-C821DAE0AD35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FFEEDFF-BD5C-4000-A763-C821DAE0AD35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FFEEDFF-BD5C-4000-A763-C821DAE0AD35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714B926A-9ABF-4FAB-ADB8-37F1B882472A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714B926A-9ABF-4FAB-ADB8-37F1B882472A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714B926A-9ABF-4FAB-ADB8-37F1B882472A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714B926A-9ABF-4FAB-ADB8-37F1B882472A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CF4AE36-4D0A-4B00-8856-7E465C18A594}
+	EndGlobalSection
+EndGlobal
