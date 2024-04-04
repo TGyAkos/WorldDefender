@@ -15,9 +15,5 @@
         {
             SpawnChance *= 2;
         }
-        public void CheckIfBelowPlayer()
-        {
-
-        }
     }
 }

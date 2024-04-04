@@ -12,7 +12,6 @@
         public List<Data<String, Int32>> Data { get; set; }
         public bool IsAlive { get; set; }
         public int Health { get; set; }
-        public int Score { get; set; }
 
 
         public void ClacSpeedVec()
