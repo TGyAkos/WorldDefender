@@ -1,4 +1,6 @@
-﻿namespace WorldDefender.Models.Entities.Interactables
+﻿using System.ComponentModel;
+
+namespace WorldDefender.Models.Entities.Interactables
 {
     // Generic enemy class movementet, illetve a sebzeseket kell kezelnie
     // Tarolja a a megolesert adott pontokat
@@ -10,7 +12,6 @@
 
         // Mennyit sebez a playerre ha belemegy
         public int DamageValue { get; set; }
-
 
     }
 }
