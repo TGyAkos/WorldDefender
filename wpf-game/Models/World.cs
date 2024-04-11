@@ -6,8 +6,8 @@ namespace WorldDefender.Models
     {
         public int Tick { get; set; }
         public double TickSpeed { get; set; }
-        public List<Interactable> Interactables { get; set; }
-
+        public Player Player { get; set; }
+        public EntityManagement EntityManagement { get; set; }
 
         public World()
         {
@@ -15,9 +15,11 @@ namespace WorldDefender.Models
             TickSpeed = 1.0 / 60.0;
         }
 
+
+
         public void MainLoop()
         {
-            while (true)
+            while (Player.IsGameOver == false)
             {
                 // Update all entities
                 // Check for collisions
@@ -38,14 +40,14 @@ namespace WorldDefender.Models
             // Ennek kene frissitenie az osszes entitast
         }
 
-        public void CheckCollisions()
-        {
-            // Ennek kene inditania az utkozes ellenorzeseket az entitasok kozott
-        }
-
         public void IncreaseSpawnChance()
         {
             // Ennek kene novelnie az Enemy SpawnChance-et
+        }
+
+        public void IncreaseEnemySpeed()
+        {
+
         }
 
         public void ResetTick()

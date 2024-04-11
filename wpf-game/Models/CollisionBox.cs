@@ -2,6 +2,7 @@ namespace WorldDefender.Models
 {
     public class CollisionBox
     {
+        public int Id { get; set; }
         public double OffsetY { get; set; }
         public int Size { get; set; }
         public double MinX { get; set; }

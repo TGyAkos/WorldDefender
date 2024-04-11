@@ -14,6 +14,7 @@
         public int Health { get; set; }
         public int WorldBorderUpper { get; set; }
         public int WorldBorderLower { get; set; }
+        public CollisionBox CollisionBox { get; set; }
 
 
         public void ClacSpeedVec()
@@ -22,11 +23,6 @@
             AbsoluteSpeed = (int)Math.Abs(Math.Round(Math.Sqrt(Math.Pow(PosX, 2) + Math.Pow(PosY, 2))));
             SpeedVectorX = PosX / AbsoluteSpeed;
             SpeedVectorY = PosY / AbsoluteSpeed;
-        }
-
-        public void CheckCollision(Entity entity)
-        {
-
         }
 
         public void Destory()
