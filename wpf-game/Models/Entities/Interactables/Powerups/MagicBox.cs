@@ -6,7 +6,7 @@
     //      V alakban lo es egyenesen ugyanolyan sebessegel
     //      +1 elet
 
-    internal class MagicBox : Powerup
+    public class MagicBox : Powerup
     {
     }
 }

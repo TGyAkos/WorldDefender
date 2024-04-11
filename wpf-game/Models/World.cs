@@ -1,10 +1,13 @@
-﻿namespace WorldDefender.Models
+﻿using WorldDefender.Models.Entities;
+
+namespace WorldDefender.Models
 {
-    internal class World
+    public class World
     {
         public int Tick { get; set; }
         public double TickSpeed { get; set; }
-        public List<Entity> Entities { get; set; }
+        public List<Interactable> Interactables { get; set; }
+
 
         public World()
         {
@@ -24,35 +27,35 @@
             }
         }
 
-        private void AdvanceTick()
+        public void AdvanceTick()
         {
             if (Tick >= 60) ResetTick();
             else Tick++;
         }
 
-        private void UpdateWorld()
+        public void UpdateWorld()
         {
             // Ennek kene frissitenie az osszes entitast
         }
 
-        private void CheckCollisions()
+        public void CheckCollisions()
         {
             // Ennek kene inditania az utkozes ellenorzeseket az entitasok kozott
         }
 
-        private void IncreaseSpawnChance()
+        public void IncreaseSpawnChance()
         {
             // Ennek kene novelnie az Enemy SpawnChance-et
         }
 
-        private void ResetTick()
+        public void ResetTick()
         {
             Tick = 0;
         }
 
-        private void ClearDeadEntities()
+        public void ClearDeadEntities()
         {
-            Entities.RemoveAll(e => !e.IsAlive);
+            Interactables.RemoveAll(e => !e.IsAlive);
         }
     }
 }

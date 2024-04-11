@@ -1,7 +1,7 @@
 ﻿namespace WorldDefender.Models
 {
     // Generic osztaly a jatekban szereplo entitasokhoz, direkt nem hasznaljuk
-    internal class Entity
+    public class Entity
     {
         public int Id { get; set; }
         public double PosX { get; set; }

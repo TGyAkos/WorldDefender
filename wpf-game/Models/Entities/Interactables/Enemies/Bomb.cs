@@ -1,6 +1,6 @@
 ﻿namespace WorldDefender.Models.Entities.Interactables.Enemies
 {
-    internal class Bomb
+    public class Bomb
     {
         // Mennyit sebez a playerre ha belemegy
         // 
