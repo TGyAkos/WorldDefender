@@ -10,7 +10,7 @@
         public double SpeedVectorX { get; set; }
         public double SpeedVectorY { get; set; }
         public List<Data<String, Int32>> Data { get; set; }
-        public bool isAlive { get; set; }
+        public bool IsAlive { get; set; }
         public int Health { get; set; }
         public int WorldBorderUpper { get; set; }
         public int WorldBorderLower { get; set; }

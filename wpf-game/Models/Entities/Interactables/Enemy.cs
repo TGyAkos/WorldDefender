@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-namespace WorldDefender.Models.Entities.Interactables
+﻿namespace WorldDefender.Models.Entities.Interactables
 {
     // Generic enemy class movementet, illetve a sebzeseket kell kezelnie
     // Tarolja a a megolesert adott pontokat

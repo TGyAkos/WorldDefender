@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace WorldDefender.Models
 {
-    internal class CollisionBox
+    public class CollisionBox
     {
         public double OffsetY { get; set; }
         public int Size { get; set; }
