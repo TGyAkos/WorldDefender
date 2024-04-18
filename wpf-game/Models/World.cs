@@ -57,7 +57,6 @@ namespace WorldDefender.Models
 
         public void ClearDeadEntities()
         {
-            Interactables.RemoveAll(e => !e.IsAlive);
         }
     }
 }

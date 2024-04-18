@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorldDefender")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50cbb15e3ae2efd29bad1e52bc44974b270c7867")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+456735a35e1d38742dd235a3aa828e98be288082")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorldDefender")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorldDefender")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
