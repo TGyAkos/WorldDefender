@@ -10,6 +10,11 @@
 
         // Mennyit sebez a playerre ha belemegy
         public int DamageValue { get; set; }
-
+        public Enemy(int points, int health, int damageValue)
+        {
+            Points = points;
+            Health = health;
+            DamageValue = damageValue;
+        }
     }
 }

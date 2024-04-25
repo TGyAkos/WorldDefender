@@ -1,7 +1,9 @@
-﻿namespace WorldDefender.Models
+﻿using WorldDefender.Interfaces;
+
+namespace WorldDefender.Models
 {
     // Generic osztaly a jatekban szereplo entitasokhoz, direkt nem hasznaljuk
-    public class Entity
+    public class Entity : AMethods
     {
         public int Id { get; set; }
         public double PosX { get; set; }
