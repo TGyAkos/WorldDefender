@@ -1,3 +1,5 @@
+using System.Drawing;
+using System.Windows;
 using WorldDefender.Models.Entities;
 
 namespace WorldDefender.Models
@@ -5,25 +7,17 @@ namespace WorldDefender.Models
     public class CollisionBox
     {
         public int Id { get; set; }
-        public double OffsetY { get; set; }
-        public int Size { get; set; }
-        public Coordiantes MinCoords { get; set; }
-        public Coordiantes MaxCoords { get; set; }
-        public Coordiantes CenterPos { get; set; }
 
-        public CollisionBox(double offsety, int size)
+        public Rectangle CollisionRectangle = new Rectangle();
+
+        public CollisionBox(Coordiantes centerPos, int sizeX, int sizeY)
         {
-            OffsetY = offsety;
-            Size = size;
+            CollisionRectangle = new Rectangle((int)centerPos.X, (int)centerPos.Y, sizeX, sizeY);
         }
 
         public void UpdateCollisionBox(Coordiantes newCenterPos)
         {
-            MaxCoords = new Coordiantes(newCenterPos.X + Size, newCenterPos.Y + OffsetY);
-            MinCoords = new Coordiantes(newCenterPos.X - Size, newCenterPos.Y + OffsetY);
-
-            CenterPos = newCenterPos;
+            CollisionRectangle.Location = new System.Drawing.Point((int)newCenterPos.X, (int)newCenterPos.Y);
         }
-
     }
 }

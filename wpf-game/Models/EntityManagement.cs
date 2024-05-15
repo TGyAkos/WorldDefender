@@ -1,8 +1,12 @@
-﻿namespace WorldDefender.Models
+﻿using WorldDefender.Models.Entities;
+using WorldDefender.Models.Entities.Interactables;
+
+namespace WorldDefender.Models
 {
     public class EntityManagement
     {
-        public List<Entity> EntityList = new List<Entity>();
+        public List<Bullet> BulletList = new List<Bullet>();
+        public List<Enemy> EnemyList = new List<Enemy>();
         public List<Entity> CollidedList = new List<Entity>();
 
         public void CheckCollision()
