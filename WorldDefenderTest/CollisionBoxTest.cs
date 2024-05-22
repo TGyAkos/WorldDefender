@@ -1,17 +1,19 @@
 ﻿using WorldDefender.Models;
 using WorldDefender.Models.Entities;
-
+   
 namespace WorldDefenderTest
 {
     [TestClass]
     public class CollisionBoxTest
     {
         private CollisionBox collisionBox { get; set; }
+        private CollisionBox collisionBox2 { get; set; }
 
         [TestInitialize]
         public void Initialize()
         {
-            collisionBox = new CollisionBox(5, 3);
+            collisionBox = new CollisionBox(new Coordiantes(5,5),2,2);
+            collisionBox2 = new CollisionBox(new Coordiantes(5, 5), 2, 2);
         }
 
         [TestCleanup]
@@ -25,11 +27,7 @@ namespace WorldDefenderTest
         {
             collisionBox.UpdateCollisionBox(new Coordiantes(5, 10));
 
-            Assert.AreEqual(8, collisionBox.MaxCoords.X);
-            Assert.AreEqual(15, collisionBox.MaxCoords.Y);
-
-            Assert.AreEqual(2, collisionBox.MinCoords.X);
-            Assert.AreEqual(15, collisionBox.MinCoords.Y);
+            Assert.IsTrue(collisionBox.CollisionRectangle.IntersectsWith(collisionBox2.CollisionRectangle));
         }
 
     }

@@ -12,8 +12,8 @@ namespace WorldDefenderTest
         public void Initialize()
         {
             EM = new EntityManagement();
-            EM.EntityList.Add(new Enemy(1, 1, 1));
-            EM.EntityList.Add(new Enemy(3, 3, 3));
+            EM.EnemyList.Add(new Enemy(1, 1, 1));
+            EM.EnemyList.Add(new Enemy(3, 3, 3));
         }
 
         [TestCleanup]
@@ -25,9 +25,9 @@ namespace WorldDefenderTest
         [TestMethod]
         public void Test_DMGRecieved()
         {
-            EM.EntityList[1].DMGRecieved();
+            EM.EnemyList[1].DMGRecieved();
 
-            Assert.AreEqual(2, EM.EntityList[1].Health);
+            Assert.AreEqual(2, EM.EnemyList[1].Health);
         }
 
         [TestMethod]
