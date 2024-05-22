@@ -1,4 +1,5 @@
 ﻿using WorldDefender.Interfaces;
+using WorldDefender.Models.Entities;
 
 namespace WorldDefender.Models
 {
@@ -6,8 +7,7 @@ namespace WorldDefender.Models
     public class Entity : AMethods
     {
         public int Id { get; set; }
-        public double PosX { get; set; }
-        public double PosY { get; set; }
+        public Coordiantes CenterPos { get; set; }
         public int AbsoluteSpeed { get; set; }
         public double SpeedVectorX { get; set; }
         public double SpeedVectorY { get; set; }
@@ -22,9 +22,9 @@ namespace WorldDefender.Models
         public void ClacSpeedVec()
         {
             IsAlive = true;
-            AbsoluteSpeed = (int)Math.Abs(Math.Round(Math.Sqrt(Math.Pow(PosX, 2) + Math.Pow(PosY, 2))));
-            SpeedVectorX = PosX / AbsoluteSpeed;
-            SpeedVectorY = PosY / AbsoluteSpeed;
+            AbsoluteSpeed = (int)Math.Abs(Math.Round(Math.Sqrt(Math.Pow(CenterPos.X, 2) + Math.Pow(CenterPos.Y, 2))));
+            SpeedVectorX = CenterPos.X / AbsoluteSpeed;
+            SpeedVectorY = CenterPos.Y / AbsoluteSpeed;
         }
 
         public void Destory()

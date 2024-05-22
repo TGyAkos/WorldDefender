@@ -1,6 +1,4 @@
 using WorldDefender.Models;
-using WorldDefender.Models.Entities;
-using WorldDefender.Models.Entities.Interactables;
 
 namespace WorldDefenderTest
 {
@@ -12,8 +10,9 @@ namespace WorldDefenderTest
         public void Initialize()
         {
             EM = new EntityManagement();
-            EM.EnemyList.Add(new Enemy(1, 1, 1));
-            EM.EnemyList.Add(new Enemy(3, 3, 3));
+            // TODO SOMETHING WONG
+            //EM.EnemyList.Add(new Enemy(1, 1, 1));
+            //EM.EnemyList.Add(new Enemy(3, 3, 3));
         }
 
         [TestCleanup]
@@ -33,7 +32,8 @@ namespace WorldDefenderTest
         [TestMethod]
         public void Test_DMGDealt()
         {
-            EM.CheckWorldBorder();
+            // TODO SOMETHING WONG
+            //EM.CheckWorldBorder();
 
             Assert.AreEqual(2, 1);
         }

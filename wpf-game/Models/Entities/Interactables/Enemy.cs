@@ -6,15 +6,18 @@
     {
         // Lehet negativ is
         public int Points { get; set; }
-        public int Health { get; set; }
 
         // Mennyit sebez a playerre ha belemegy
         public int DamageValue { get; set; }
-        public Enemy(int points, int health, int damageValue)
+
+        public Coordiantes CenterPos { get; set; } = new Coordiantes(0, 0);
+        public int SizeX { get; set; }
+        public int SizeY { get; set; }
+        public CollisionBox CollisionBox { get; set; }
+
+        public Enemy()
         {
-            Points = points;
-            Health = health;
-            DamageValue = damageValue;
+            CollisionBox = new CollisionBox(CenterPos, SizeX, SizeY);
         }
     }
 }
